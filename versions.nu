@@ -61,6 +61,7 @@ def main [logic: string, version_file: string, directory: string] {
 
     print "new version is"; print $nv;
 
+    # write new version to the output file
     $"($nv.major).($nv.minor).($nv.patch)" | save -f NEWVERSION
     
 }
